@@ -1,0 +1,69 @@
+body {
+    background: #B6CED4;
+    background-color: #B6CED4;
+}
+
+.reveal {
+    color: #273C42;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    color: #011C72;
+}
+
+.reveal .slideChange {
+    position: absolute;
+    width: 90px;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background: rgba(0,43,105,0.3);
+    font-size: 0.4em;
+    z-index: 101;
+    text-align: center;
+    display: none;
+}
+
+.reveal .slideChange .button {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.reveal .syncMessage {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -140px;
+    background: rgb(2,112,49);
+    text-align: center;
+    font-size: 0.6em;
+    padding: 10px 15px;
+    display: none;
+    z-index: 101;
+    color: #ffffff;
+}
+
+.reveal section img {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.reveal pre {
+    box-shadow: none;
+}
+
+.reveal pre code {
+    padding: 5px 20px;
+    max-height: 500px;
+}
+
+#installButton {
+    display: none;
+}
