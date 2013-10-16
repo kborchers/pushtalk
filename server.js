@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 var request = require('request');
-var PORT = process.env.OPENSHIFT_INTERNAL_PORT || process.env.OPENSHIFT_NODEJS_PORT  || 8080;
-var IPADDRESS = process.env.OPENSHIFT_INTERNAL_IP || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var PORT = process.env.PORT || 8080;
+var IPADDRESS = '0.0.0.0';
 
 var currentSlideH = 0,
     currentSlideV = 0;
