@@ -4,8 +4,6 @@ var request = require('request');
 var PORT = process.env.PORT || 8080;
 var IPADDRESS = '0.0.0.0';
 
-process.env.PWD = process.cwd();
-
 var currentSlideH = 0,
     currentSlideV = 0;
 
@@ -26,7 +24,7 @@ var allowCrossDomain = function(req, res, next) {
 app.configure(function () {
     app.use(allowCrossDomain);
     app.use(express.bodyParser());
-    app.use('/', express.static(process.env.PWD + '/slides'));
+    app.use(express.static(__dirname + '/slides'));
 });
 
 app.post('/slide/transition/sender', function(req, res, next) {
