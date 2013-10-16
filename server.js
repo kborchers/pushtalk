@@ -24,7 +24,7 @@ var allowCrossDomain = function(req, res, next) {
 app.configure(function () {
     app.use(allowCrossDomain);
     app.use(express.bodyParser());
-    app.use('/', express.static(__dirname + '/slides'));
+    app.use('/', express.static(process.cwd() + '/slides'));
 });
 
 app.post('/slide/transition/sender', function(req, res, next) {
