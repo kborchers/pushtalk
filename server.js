@@ -27,6 +27,10 @@ app.configure(function () {
     app.use(express.static(__dirname + '/slides'));
 });
 
+app.get('/', function(req, res) {
+    res.redirect('/slides/index.html');
+});
+
 app.post('/slide/transition/sender', function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'POST,OPTIONS');
