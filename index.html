@@ -277,7 +277,7 @@ onConnect: function() {
             function syncSlide() {
                 // Fetch current slide and update
                 $.ajax({
-                    url: "http://pushtalk-aerogearkb.rhcloud.com/currentSlide",
+                    url: "http://pushtalk.herokuapp.com/currentSlide",
                     dataType: "json",
                     cache: false,
                     success: function( data ) {
@@ -320,7 +320,7 @@ onConnect: function() {
 
                 SPSURL = "wss://push.services.mozilla.com";
             } else {
-                SPSURL = "http://esgaroth.qmx.me:7777/simplepush";
+                SPSURL = "http://ag-sps.herokuapp.com/simplepush";
             }
 
             // Setup push handling
