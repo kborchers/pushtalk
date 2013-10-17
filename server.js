@@ -41,7 +41,7 @@ app.post('/slide/transition/sender', function(req, res, next) {
 
     request({
         method: 'POST',
-        url: "https://batch2-dbevenius.rhcloud.com/rest/sender/selected",
+        url: "https://agups-aerogearkb.rhcloud.com/rest/sender/selected",
         headers: {
             'Content-type': 'application/json'
         },
@@ -51,8 +51,8 @@ app.post('/slide/transition/sender', function(req, res, next) {
             }
         }),
         auth: {
-            user: 'c30dd74e-75b0-49b3-aa30-52a4a5be3d6d',
-            pass: '1fcf06ba-560e-4456-9c3b-c0685ef7b7da'
+            user: '46ed29ff-06fd-4711-be25-b32031067697',
+            pass: 'cef802dd-f67e-481f-8c65-412239ed9533'
         }
     });
 
