@@ -273,7 +273,7 @@ onConnect: function() {
 
 			Reveal.addEventListener('slidechanged', function(event) {
 				$.ajax({
-					url: "http://pushtalk-aerogearkb.rhcloud.com/slide/transition/sender",
+					url: "http://pushtalk.herokuapp.com/slide/transition/sender",
 					type: "POST",
 					data: {
 						h: event.indexh,
