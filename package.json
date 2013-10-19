@@ -1,6 +1,6 @@
 {
   "name": "SimplePushTalk",
-  "version": "2.5.0",
+  "version": "1.0.0",
   "description": "Presentation on the AeroGear SimplePush Implementation",
   "homepage": "http://aerogear.org",
   "scripts": {
