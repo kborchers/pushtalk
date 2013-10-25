@@ -320,11 +320,11 @@ onConnect: function() {
 
                 SPSURL = "wss://push.services.mozilla.com";
             } else {
-                SPSURL = "http://ag-sps.herokuapp.com/simplepush";
+                SPSURL = "http://inmem-aerogearkb.rhcloud.com:8000/simplepush";
             }
 
             // Setup push handling
-            var UPC = AeroGear.UnifiedPushClient('6923d1cd-9eb7-4556-95e2-b4298d78ebc9','746c6837-981e-4da6-b1bf-917a4cc63513','https://agups-aerogearkb.rhcloud.com/rest/registry/device'),
+            var UPC = AeroGear.UnifiedPushClient('3a78b733-4107-4f22-bffd-659b408b247e','b4d09145-0c9b-407a-b696-e96a7e9f51bb','http://inmem-aerogearkb.rhcloud.com/rest/registry/device'),
                 SPC = AeroGear.SimplePushClient({
                     simplePushServerURL: SPSURL,
                     useNative: true,

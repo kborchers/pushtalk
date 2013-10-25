@@ -41,7 +41,7 @@ app.post('/slide/transition/sender', function(req, res, next) {
 
     request({
         method: 'POST',
-        url: "https://agups-aerogearkb.rhcloud.com/rest/sender/selected",
+        url: "http://inmem-aerogearkb.rhcloud.com/rest/sender",
         headers: {
             'Content-type': 'application/json'
         },
@@ -51,8 +51,8 @@ app.post('/slide/transition/sender', function(req, res, next) {
             }
         }),
         auth: {
-            user: '46ed29ff-06fd-4711-be25-b32031067697',
-            pass: 'cef802dd-f67e-481f-8c65-412239ed9533'
+            user: '0c16b1b0-0715-4634-9625-7eb222024769',
+            pass: 'c62d0428-7184-4a01-bc47-844f2b2a7d4e'
         }
     });
 
