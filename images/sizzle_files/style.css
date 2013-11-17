@@ -1,0 +1,32 @@
+body{margin:0;padding:0 0 23px;font-family:Arial,Helvetica,sans-serif;text-align:left;font-size:12px;color:#78645a;background:#c6b9ac;}
+p{margin:0;}
+a{color:#ff8200;}
+::-moz-selection{color:#fff;background:#78645a;}
+::selection{color:#fff;background:#78645a;}
+#page-container{width:820px;margin:42px auto 0;background:#fff url(i/page.png) repeat-y -820px 0;}
+#header{padding-top:66px;background:url(i/page.png) no-repeat 0 0;}
+#header h1{width:236px;height:171px;margin:0 auto;text-indent:-9999px;background:url(i/logo.png) no-repeat 0 0;}
+#header p,
+#header span{width:515px;margin:0 auto;background:url(i/separator.png) no-repeat 0 0;}
+#header span{display:block;width:auto;padding:6px 30px;line-height:24px;text-align:center;font:19px "Helvetica Light", Arial, Helvetica, sans-serif;color:#ff6400;background-position:0 100%;}
+#header span::-moz-selection{color:#fff;background:#ff6400;}
+#header span::selection{color:#fff;background:#ff6400;}
+#content{padding-bottom:32px;background:url(i/page.png) no-repeat -1640px 100%;zoom:1;}
+
+.link{width:240px;margin:0 auto;line-height:25px;}
+.link a{margin-left:20px;color:#ff8200;}
+.link a:hover,
+.link a:focus{color:#fea100;}
+.link a:active{color:#ff6400;}
+.download{margin-top:29px;margin-bottom:10px;padding:0;}
+.download a{display:block;overflow:hidden;height:67px;margin:0;text-indent:-9999px;background:url(i/download.png) no-repeat 0 0;zoom:1;}
+.download a:hover,
+.download a:focus{background-position:0 -67px;}
+.download a:active{background-position:0 -134px;}
+
+.features{overflow:hidden;margin:35px 0 75px;zoom:1;}
+.features div{float:left;width:200px;margin-right:20px;display:inline;}
+.features div.first{margin-left:110px;} /* Waiting for IE6 death (:first-child) */
+h2{margin:0 0 25px;padding:0;font-size:16px;font-weight:normal;}
+ul{margin:0;padding:0;list-style:none;line-height:18px;}
+li{width:185px;padding-left:15px;background:url(i/bullet.png) no-repeat 0 6px;}

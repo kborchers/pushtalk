@@ -1,6 +1,6 @@
 body {
-    background: #B6CED4;
-    background-color: #B6CED4;
+    background: #8AB0B9;
+    background-color: #8AB0B9;
 }
 
 .reveal {
@@ -9,6 +9,7 @@ body {
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     color: #011C72;
+    text-transform: none;
 }
 
 .reveal .slideChange {
@@ -66,4 +67,25 @@ body {
 
 #installButton {
     display: none;
+}
+
+.reveal p {
+    margin-top: 30px;
+}
+
+.reveal h2 {
+    margin-bottom: 50px;
+    line-height: 1em;
+}
+
+.reveal h2 strong {
+    font-size: 1.6em;
+    line-height: 1.2em;
+}
+
+.reveal .site-images {
+    position: absolute;
+    top: -50%;
+    left: 10%;
+    max-height: 500px;
 }
