@@ -84,8 +84,5 @@ body {
 }
 
 .reveal .site-images {
-    position: absolute;
-    top: -50%;
-    left: 10%;
     max-height: 500px;
 }
