@@ -447,14 +447,55 @@
                     <h3>June 2013: Too many polyfills being created</h3>
                     <p>jQuery team, Polymer team and MS Open Tech decided the best route would be for the jQuery team to implement old IE support in Polymer's polyfill.</p>
                 </section>
+                <section>
+                    <h2>Click / Touch / MSPointer Support</h2>
+                    <h3>The Old Way</h3>
+                    <pre>
+                        <code class="javascript">
+element.addEventListener( 'mousedown', onMouseDown, false );
+element.addEventListener( 'mousemove', onMouseMove, false );
+element.addEventListener( 'mouseup', onMouseUp, false );
+element.addEventListener( 'touchstart', onTouchStart, false );
+element.addEventListener( 'touchmove', onTouchMove, false );
+element.addEventListener( 'touchend', onTouchEnd, false );
+element.addEventListener( 'MSPointerDown', onPointerDown, false );
+element.addEventListener( 'MSPointerMove', onPointerMove, false );
+element.addEventListener( 'MSPointerUp', onPointerUp, false );
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h2>Click / Touch / MSPointer Support</h2>
+                    <h3>The Pointer Event Way</h3>
+                    <pre>
+                        <code class="javascript">
+element.addEventListener( 'pointerdown', onPointerDown, false );
+element.addEventListener( 'pointermove', onPointerMove, false );
+element.addEventListener( 'pointerup', onPointerUp, false );
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h2>Less Code is Good!</h2>
+                    <h3>Less things that can break</h3>
+                    <h3>Less tests needed for coverage</h3>
+                    <h3>It's Just Prettier</h3>
+                </section>
+                <section>
+                    <h2>Use Pointer Events Now!</h2>
+                    <h3>https://github.com/Polymer/PointerEvents</h3>
+                    <h3>https://github.com/jquery/jquery-pointer-events</h3>
+                </section>
 
 
 
 
                 <section>
+                    <h1>Push API</h1>
+                </section>
+                <section>
                     <h2>pushtalk.krisborchers.com</h2>
                 </section>
-
                 <section>
                     <h1>Messaging</h1>
                 </section>
@@ -478,7 +519,7 @@
                     <img src="images/blackberry.png"/>
                 </section>
                 <section>
-                    <h2>SimplePush<br>(Firefox OS / Android / Desktop)*<br><br>and more</h2>
+                    <h2>SimplePush<br>(Firefox OS / Android / Desktop)<br><br>and more</h2>
                 </section>
 
 
@@ -495,7 +536,6 @@
                 <section>
                     <h2>Push API is "Simple"</h2>
                 </section>
-
                 <section>
                     <img src="images/aerogear.png"/>
                 </section>
@@ -589,7 +629,7 @@ onConnect: function() {
             auto = $("#autoSync").prop("checked");
 
         if ( navigator.mozNotification && document.hidden ) {
-            notification = navigator.mozNotification.createNotification("SimplePush Talk", "Speaker has advanced slide");
+            notification = navigator.mozNotification.createNotification("Push Talk", "Speaker has advanced slide");
             ...
             notification.show();
         }
@@ -604,7 +644,7 @@ onConnect: function() {
                     </pre>
                 </section>
                 <section>
-                    <h2>Questions</h2>
+                    <h2>Thank you!</h2>
                     <p>
                         Kris Borchers<br>
                         @kborchers - Twitter<br>
